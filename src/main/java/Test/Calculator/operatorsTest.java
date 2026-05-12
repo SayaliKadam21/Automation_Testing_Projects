@@ -62,6 +62,7 @@ public class operatorsTest {
 		driver.close();
 	}
 	
+	//Multiplication
 	
 	void mul() {
 		driver.findElement(By.xpath("//span[text()='1']")).click();
@@ -79,6 +80,7 @@ public class operatorsTest {
 		driver.close();
 	}
 	
+	//Division
 	
 	void div() {
 		driver.findElement(By.xpath("//span[text()='8']")).click();
