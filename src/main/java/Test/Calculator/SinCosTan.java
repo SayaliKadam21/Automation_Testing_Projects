@@ -73,6 +73,73 @@ public interface SinCosTan {
 			e.printStackTrace();
 		}
 		
-	}
+		
+		
+//---------------------------Inverse--------------------------------------
+		
+		cd.findElement(By.xpath("//span[@onclick=\"r('asin')\"]")).click();
+		cd.findElement(By.xpath("//span[text()='1']")).click();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		cd.findElement(By.xpath("//span[text()='AC']")).click();
+		
+		
+		cd.findElement(By.xpath("//span[@onclick=\"r('acos')\"]")).click();
+		cd.findElement(By.xpath("//span[text()='0']")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		cd.findElement(By.xpath("//span[text()='AC']")).click();
+		 
+		 
+		 
+		 
+		 cd.findElement(By.xpath("//span[@onclick=\"r('atan')\"]")).click();
+		 cd.findElement(By.xpath("//span[text()='1']")).click();
+		 try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			cd.findElement(By.xpath("//span[text()='AC']")).click();
+			
+			
+			cd.findElement(By.xpath("//span[@onclick=\"r('pi')\"]")).click();
+			
+			 try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			cd.findElement(By.xpath("//span[text()='AC']")).click();
+			
+			
+			cd.findElement(By.xpath("//span[@onclick=\"r('e')\"]")).click();
+			
+			 try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			cd.findElement(By.xpath("//span[text()='AC']")).click();
+			
+			cd.close();
 
+	}
 }
